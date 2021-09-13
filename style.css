@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(216, 135, 135);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    font-size: 50px;
+}
+footer{
+    display: flex;
+    font-size: 20px;
+    background-color: #208c94;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+    padding: 5px;
+}
+.deviceBody{
+    border: solid 8px black;
+    border-radius: 10px;
+    background-color: #cccccc;
+    width: 350px;
+    height:450px;
+    display: flex;
+    flex-direction: column;
+}
+.displayPart{
+    background-color: #444444;
+    height:22%;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+.displayResult{
+    background-color: #cccccc;
+    border-radius: 10px;
+    border: solid 8px black;
+    height: 65px;
+    width: 300px;
+    display:block;
+    flex-direction: row;
+    text-align: right;
+    flex-wrap:nowrap;
+    box-sizing: border-box;
+    padding: 0 5px;
+    font-size: 40px;
+    /* overflow-wrap: break-word;    
+      for making wrap up wards but dont need it there */
+}
+.grid{
+    height:78%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    gap: 10px;
+    padding:20px;
+}
+button{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+button:active{
+    background-color: #999999;
+    transform: scale(0.95);
+}
+.gridItem{
+    border-radius: 10px;
+    border: solid 5px black;
+    font-size: 25px;
+    font-weight: 500;
+}
+.equal{
+    background-color: #d82f23;
+    grid-area: 4/4/6/5;
+}
