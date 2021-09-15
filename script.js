@@ -121,7 +121,10 @@ function operate(num1, num2){
 }
 //function to delete one degit
 function deleteNum(){
-    if(num1.charAt(num1.length-1) === "." || num2.charAt(num2.length-1) === "."){
+    let num1DotString =num1.charAt(num1.length-1);
+    let num2DotString = num2.charAt(num2.length-1);
+
+    if(num1DotString === "." || num2DotString === "."){
         document.getElementById(".").disabled =false;
     }
     if(typeof(num1) != "number"){       //is num1 is not a number yet meaning no operate has yet to be pressed
